@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import LaptopCard from './LaptopCard';
-import FilterComponent from './FilterComponent';
-import FooterComponent from './FooterComponent';
-import OrderForm from './OrderForm';
+import LaptopsCard from './components./LaptopsCard';
+import Filter from './components./Filter';
+import FooterComponent from './components./FooterComponent';
+import OrderForm from './components./OrderForm';
 
 
 
@@ -43,7 +43,7 @@ function App() {
         </section>
       </main>
 
-      <FooterComponent />
+      <FooterComponent/>
 
       {isOrderFormOpen && (
         <OrderForm selectedLaptop={selectedLaptop} closeForm={closeForm} />
